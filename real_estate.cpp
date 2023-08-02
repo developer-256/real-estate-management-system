@@ -276,3 +276,21 @@ void sell_prop()
         return;
     }
 }
+
+void update_txt_file()
+{
+    ofstream file;
+    file.open("data.txt");
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < 7; j++)
+        {
+            file << data[i][j] << ',';
+        }
+        if (i < rows - 1) // if we dont do this after last row, an empty row will be added
+        {
+            file << endl;
+        }
+    }
+    file.close();
+}
