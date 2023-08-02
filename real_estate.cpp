@@ -10,11 +10,11 @@
 using namespace std;
 
 #define limit 100
-string data[limit][5]; // Whole .txt file data will be stored in this when import_data() is called and this is global.
+string data[limit][7]; // Whole .txt file data will be stored in this when import_data() is called and this is global.
 int rows = 0;          // rows are calculated and stored in this for later use in for loops in iterating 2D array
 void import_data()
 {
-    data[limit][5]; // initializing array in which we will import data
+    data[limit][7]; // initializing array in which we will import data
 
     ifstream file;                   // it must be ifstream not fstream
     file.open("Data.txt", ios::app); // set file name and ios::app will not overwrite file while writing it again
